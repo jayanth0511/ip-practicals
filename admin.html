@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+    </header>
+    <main>
+        <h2>Manage Vehicles</h2>
+        <form method="POST" action="add_vehicle.php">
+            <label for="name">Vehicle Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="type">Vehicle Type:</label>
+            <select id="type" name="type">
+                <option value="car">Car</option>
+                <option value="truck">Truck</option>
+                <option value="suv">SUV</option>
+            </select>
+
+            <label for="price">Price per Day:</label>
+            <input type="number" id="price" name="price" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <button type="submit">Add Vehicle</button>
+        </form>
+    </main>
+</body>
+</html>

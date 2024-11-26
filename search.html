@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Vehicles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Search for a Vehicle</h1>
+    </header>
+    <main>
+        <form method="POST" action="search.php">
+            <label for="vehicleType">Vehicle Type:</label>
+            <select id="vehicleType" name="vehicleType">
+                <option value="car">Car</option>
+                <option value="truck">Truck</option>
+                <option value="suv">SUV</option>
+            </select>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="duration">Rental Duration (days):</label>
+            <input type="number" id="duration" name="duration" required>
+
+            <button type="submit">Search</button>
+        </form>
+    </main>
+</body>
+</html>
